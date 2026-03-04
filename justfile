@@ -55,26 +55,26 @@ build-reset:
 flash-left: build-left
     #!/usr/bin/env bash
     set -euo pipefail
-    mountpoint=$(find /media /run/media -maxdepth 3 -name "NICENANO" -type d 2>/dev/null | head -1)
+    mountpoint=$(lsblk -o MOUNTPOINT,LABEL -nr | awk '$2 == "Mriya" {print $1; exit}')
     if [ -z "$mountpoint" ]; then
-        echo "Error: NICENANO drive not found. Double-tap reset on the left half and try again."
+        echo "Error: Mriya drive not found. Double-tap reset on the left half and try again."
         exit 1
     fi
     echo "Flashing left half to $mountpoint ..."
-    cp {{ workdir }}/firmware/mriya_left.uf2 "$mountpoint/"
+    cp {{ workdir }}/firmware/mriya_left.uf2 "$mountpoint/mriya_left.uf2"
     echo "Done! Left half will reboot automatically."
 
 # Flash right half — double-tap reset on the right half first, then run this
 flash-right: build-right
     #!/usr/bin/env bash
     set -euo pipefail
-    mountpoint=$(find /media /run/media -maxdepth 3 -name "NICENANO" -type d 2>/dev/null | head -1)
+    mountpoint=$(lsblk -o MOUNTPOINT,LABEL -nr | awk '$2 == "Mriya" {print $1; exit}')
     if [ -z "$mountpoint" ]; then
-        echo "Error: NICENANO drive not found. Double-tap reset on the right half and try again."
+        echo "Error: Mriya drive not found. Double-tap reset on the right half and try again."
         exit 1
     fi
     echo "Flashing right half to $mountpoint ..."
-    cp {{ workdir }}/firmware/mriya_right.uf2 "$mountpoint/"
+    cp {{ workdir }}/firmware/mriya_right.uf2 "$mountpoint/mriya_right.uf2"
     echo "Done! Right half will reboot automatically."
 
 # Clean build artifacts
