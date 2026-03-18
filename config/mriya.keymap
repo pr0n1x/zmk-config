@@ -33,27 +33,27 @@
 
         lower_layer {
             bindings = <
-        &kp ESCAPE  &kp C_MUTE   &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp F5        &kp F6           &kp F7          &kp F8     &kp RSHIFT  &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK
-&trans  &trans      &kp F1       &kp F2             &kp F3           &kp F4        &kp RG(GRAVE)    &kp MINUS       &kp F9     &kp F10     &kp F11          &kp F12         &kp BACKSLASH    &trans
-        &trans      &kp EXCL     &kp AT             &kp HASH         &kp DLLR      &kp COLON        &kp UNDERSCORE  &kp LBRC   &kp LPAR    &kp RPAR         &kp RBRC        &kp PLUS
-        &trans      &kp PERCENT  &kp CARET          &kp AMPERSAND    &kp ASTERISK  &kp PIPE         &kp EQUAL       &kp LBKT   &kp LT      &kp GT           &kp RBKT        &trans
-                                 &trans             &trans           &trans        &kp ESCAPE       &kp ENTER       &kp ENTER  &trans      &trans
+        &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp RG(GRAVE)  &kp F5        &kp F6        &kp F7          &kp F8     &kp RSHIFT  &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK
+&trans  &kp ESCAPE  &kp F1             &kp F2           &kp F3         &kp F4        &kp ESCAPE    &kp MINUS       &kp F9     &kp F10     &kp F11          &kp F12         &kp BACKSLASH    &trans
+        &trans      &kp EXCL           &kp AT           &kp HASH       &kp DLLR      &kp COLON     &kp UNDERSCORE  &kp LBRC   &kp LPAR    &kp RPAR         &kp RBRC        &kp PLUS
+        &trans      &kp PERCENT        &kp CARET        &kp AMPERSAND  &kp ASTERISK  &kp PIPE      &kp EQUAL       &kp LBKT   &kp LT      &kp GT           &kp RBKT        &trans
+                                       &trans           &trans         &trans        &kp ESCAPE    &kp ENTER       &kp ENTER  &trans      &trans
             >;
         };
 
         raise_layer {
             bindings = <
-       &kp ESCAPE  &kp C_POWER      &none      &kp KP_DIVIDE    &kp KP_ASTERISK  &kp KP_NUM      &kp C_PP    &kp INSERT  &kp HOME           &kp C_PREV          &kp C_NEXT     &kp C_VOLUME_UP
-&mo 3  &none       &kp KP_SLASH     &kp KP_N7  &kp KP_N8        &kp KP_N9        &kp KP_MINUS    &kp ENTER   &kp DELETE  &kp END            &kp BACKSPACE       &kp PAGE_UP    &kp C_VOLUME_DOWN  &kp RIGHT_SHIFT
-       &trans      &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5        &kp KP_N6        &kp KP_PLUS     &kp RSHIFT  &kp HOME    &kp UP             &kp END             &kp PAGE_DOWN  &kp RIGHT_CONTROL
-       &trans      &kp KP_N0        &kp KP_N1  &kp KP_N2        &kp KP_N3        &kp KP_ENTER    &kp RCTRL   &kp LEFT    &kp DOWN           &kp RIGHT           &kp RIGHT_ALT  &kp RMETA
-                                    &trans     &mt LCTRL KP_N0  &kp KP_DOT       &kp ESCAPE      &kp ENTER   &trans      &kp RG(BACKSLASH)  &kp K_CONTEXT_MENU
+       &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp KP_DIVIDE    &kp KP_ASTERISK  &kp KP_NUM      &kp C_PP    &kp INSERT  &kp HOME           &kp C_PREV          &kp PAGE_UP    &kp C_NEXT
+&mo 3  &kp ESCAPE  &kp KP_SLASH       &kp KP_N7        &kp KP_N8        &kp KP_N9        &kp KP_MINUS    &kp ENTER   &kp DELETE  &kp END            &kp BACKSPACE       &kp PAGE_DOWN  &kp RCTRL   &kp KP_ENTER
+       &trans      &kp KP_MULTIPLY    &kp KP_N4        &kp KP_N5        &kp KP_N6        &kp KP_PLUS     &kp RSHIFT  &kp HOME    &kp UP             &kp END             &kp RGUI       &kp RSHIFT
+       &trans      &kp KP_N0          &kp KP_N1        &kp KP_N2        &kp KP_N3        &kp KP_ENTER    &kp RCTRL   &kp LEFT    &kp DOWN           &kp RIGHT           &kp RIGHT_ALT  &kp KP_N0
+                                      &trans           &mt LCTRL KP_N0  &kp KP_DOT       &kp ESCAPE      &kp ENTER   &trans      &kp RG(BACKSLASH)  &kp K_CONTEXT_MENU
             >;
         };
 
         adjust_layer {
             bindings = <
-       &none        &none         &none         &none         &none         &none           &none         &none         &none         &none         &none         &none
+       &kp C_POWER  &none         &none         &none         &none         &none           &none         &none         &none         &none         &none         &none
 &none  &bootloader  &none         &none         &none         &none         &none           &none         &none         &none         &none         &none         &bootloader  &none
        &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
        &sys_reset   &none         &none         &none         &none         &none           &none         &none         &none         &none         &none         &sys_reset
