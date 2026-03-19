@@ -34,6 +34,8 @@ init:
 update:
     just docker "west update"
 
+alias b := build
+
 # Build both halves
 build: build-left build-right
     @echo "Done! Firmware files are in {{ workdir }}/firmware/"
