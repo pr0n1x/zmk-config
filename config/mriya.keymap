@@ -33,11 +33,11 @@
 
         lower_layer {
             bindings = <
-        &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp RG(GRAVE)  &kp F5        &kp F6               &kp F7     &kp F8     &kp RSHIFT  &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK
-&trans  &kp ESCAPE  &kp F1             &kp F2           &kp F3         &kp F4        &kp MINUS            &kp PIPE   &kp F9     &kp F10     &kp F11          &kp F12         &kp PLUS         &trans
-        &kp TILDE   &kp EXCL           &kp AT           &kp HASH       &kp DLLR      &kp UNDERSCORE       &kp COLON  &kp LBRC   &kp LPAR    &kp RPAR         &kp RBRC        &kp BACKSLASH
-        &trans      &kp PERCENT        &kp CARET        &kp AMPERSAND  &kp ASTERISK  &kp DOUBLE_QUOTES    &kp EQUAL  &kp LBKT   &kp LT      &kp GT           &kp RBKT        &trans
-                                       &trans           &trans         &trans        &kp ESCAPE           &kp ENTER  &kp ENTER  &trans      &trans
+        &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp RG(GRAVE)  &kp F5        &kp F6               &kp F7     &kp F8         &kp RSHIFT  &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK
+&trans  &kp ESCAPE  &kp F1             &kp F2           &kp F3         &kp F4        &kp MINUS            &kp PIPE   &kp F9         &kp F10     &kp F11          &kp F12         &kp PLUS         &trans
+        &kp TILDE   &kp EXCL           &kp AT           &kp HASH       &kp DLLR      &kp UNDERSCORE       &kp COLON  &kp LBRC       &kp LPAR    &kp RPAR         &kp RBRC        &kp BACKSLASH
+        &trans      &kp PERCENT        &kp CARET        &kp AMPERSAND  &kp ASTERISK  &kp DOUBLE_QUOTES    &kp EQUAL  &kp LBKT       &kp LT      &kp GT           &kp RBKT        &trans
+                                       &trans           &trans         &trans        &kp ESCAPE           &kp ENTER  &kp RS(ENTER)  &trans      &trans
             >;
         };
 
@@ -53,11 +53,11 @@
 
         adjust_layer {
             bindings = <
-       &kp C_POWER  &none         &none         &none         &none         &none           &none         &none         &none         &none         &none         &none
-&none  &bootloader  &none         &none         &none         &none         &none           &none         &none         &none         &none         &none         &bootloader  &none
-       &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
-       &sys_reset   &none         &none         &none         &none         &none           &none         &none         &none         &none         &none         &sys_reset
-                                  &none         &trans        &none         &trans          &trans        &none         &trans        &none
+       &bootloader  &none         &none         &bt BT_CLR    &none         &sys_reset      &none  &none   &none  &none  &none  &none
+&none  &none        &none         &none         &none         &none         &none           &none  &none   &none  &none  &none  &none  &trans
+       &none        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none  &none   &none  &none  &none  &none
+       &none        &none         &none         &none         &none         &none           &none  &none   &none  &none  &none  &none
+                                  &none         &none         &none         &none           &none  &trans  &none  &none
             >;
         };
     };
