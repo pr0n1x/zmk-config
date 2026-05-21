@@ -34,9 +34,9 @@
         lower_layer {
             bindings = <
         &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp RG(GRAVE)  &kp F5    &kp F6            &kp F7     &kp F8         &kp RSHIFT  &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK
-&trans  &kp ESCAPE  &kp F1             &kp F2           &kp F3         &kp F4    &kp AMPS          &kp PIPE   &kp F9         &kp F10     &kp F11          &kp F12         &kp BSLH         &trans
+&trans  &kp ESCAPE  &kp F1             &kp F2           &kp F3         &kp F4    &kp DQT           &kp AMPS   &kp F9         &kp F10     &kp F11          &kp F12         &kp BSLH         &trans
         &kp TILDE   &kp EXCL           &kp AT           &kp HASH       &kp DLLR  &kp UNDERSCORE    &kp MINUS  &kp EQUAL      &kp LBKT    &kp RBKT         &kp RSHIFT      &kp RIGHT_ALT
-        &trans      &kp PERCENT        &kp CARET        &kp ASTRK      &kp LPAR  &kp RPAR          &kp COLON  &kp DQT        &kp LT      &kp GT           &kp QMARK       &trans
+        &trans      &kp PERCENT        &kp CARET        &kp STAR       &kp LPAR  &kp RPAR          &kp COLON  &kp PIPE       &kp LT      &kp GT           &kp QMARK       &trans
                                        &trans           &trans         &trans    &kp ESCAPE        &kp ENTER  &kp RS(ENTER)  &trans      &trans
             >;
         };
