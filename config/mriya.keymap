@@ -36,7 +36,7 @@
         &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp RG(GRAVE)  &kp F5    &kp F6            &kp F7     &kp F8         &kp RSHIFT  &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK
 &trans  &kp ESCAPE  &kp F1             &kp F2           &kp F3         &kp F4    &kp DQT           &kp AMPS   &kp F9         &kp F10     &kp F11          &kp F12         &kp BSLH         &trans
         &kp TILDE   &kp EXCL           &kp AT           &kp HASH       &kp DLLR  &kp UNDERSCORE    &kp MINUS  &kp EQUAL      &kp LBKT    &kp RBKT         &kp RSHIFT      &kp RIGHT_ALT
-        &trans      &kp PERCENT        &kp CARET        &kp STAR       &kp LPAR  &kp RPAR          &kp COLON  &kp PIPE       &kp LT      &kp GT           &kp QMARK       &trans
+        &trans      &kp PERCENT        &kp ASTERISK     &kp LPAR       &kp RPAR  &kp CARET         &kp COLON  &kp PIPE       &kp LT      &kp GT           &kp QMARK       &trans
                                        &trans           &trans         &trans    &kp ESCAPE        &kp ENTER  &kp RS(ENTER)  &trans      &trans
             >;
         };
@@ -44,10 +44,10 @@
         raise_layer {
             bindings = <
         &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp KP_DIVIDE  &kp KP_ASTERISK  &kp KP_NUM      &kp C_PREV      &kp INSERT  &kp C_PP           &kp C_VOLUME_DOWN   &kp C_VOLUME_UP  &kp C_NEXT
-&trans  &kp ESCAPE  &kp KP_SLASH       &kp KP_N7        &kp KP_N8      &kp KP_N9        &kp KP_MINUS    &kp ENTER       &kp DELETE  &kp BACKSPACE      &kp PAGE_UP         &kp PAGE_DOWN    &kp RSHIFT  &lt 3 KP_ENTER
-        &trans      &kp KP_MULTIPLY    &kp KP_N4        &kp KP_N5      &kp KP_N6        &kp KP_PLUS     &kp RSHIFT      &kp HOME    &kp UP             &kp END             &kp RALT         &kp RCTRL
-        &trans      &kp KP_N0          &kp KP_N1        &kp KP_N2      &kp KP_N3        &kp KP_DOT      &kp RC(RSHIFT)  &kp LEFT    &kp DOWN           &kp RIGHT           &kp RCTRL        &kp RGUI
-                                       &trans           &trans         &trans           &kp ESCAPE      &kp ENTER       &trans      &kp RG(BACKSLASH)  &kp K_CONTEXT_MENU
+&trans  &kp ESCAPE  &none              &kp KP_N7        &kp KP_N8      &kp KP_N9        &kp KP_MINUS    &kp ENTER       &kp DELETE  &kp BACKSPACE      &kp PAGE_UP         &kp PAGE_DOWN    &kp RSHIFT  &mo 3
+        &trans      &none              &kp KP_N4        &kp KP_N5      &kp KP_N6        &kp KP_PLUS     &kp RSHIFT      &kp HOME    &kp UP             &kp END             &kp RALT         &kp RCTRL
+        &trans      &kp KP_N0          &kp KP_N1        &kp KP_N2      &kp KP_N3        &kp KP_ENTER    &kp RC(RSHIFT)  &kp LEFT    &kp DOWN           &kp RIGHT           &kp RCTRL        &kp RGUI
+                                       &trans           &trans         &kp KP_DOT       &mo 1           &kp ENTER       &trans      &kp RG(BACKSLASH)  &kp K_CONTEXT_MENU
             >;
         };
 
