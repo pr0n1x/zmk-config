@@ -33,11 +33,11 @@
 
         lower_layer {
             bindings = <
-        &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp RG(GRAVE)  &kp F5    &kp F6            &kp F7     &kp F8            &kp RG(BACKSLASH)  &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK
-&trans  &kp ESCAPE  &kp F1             &kp F2           &kp F3         &kp F4    &kp DQT           &kp AMPS   &kp F9            &kp F10            &kp F11          &kp F12         &kp BSLH         &trans
-        &kp TILDE   &kp EXCL           &kp AT           &kp HASH       &kp DLLR  &kp UNDERSCORE    &kp MINUS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PIPE         &kp RSHIFT      &kp RIGHT_ALT
-        &trans      &kp PERCENT        &kp ASTERISK     &kp LPAR       &kp RPAR  &kp CARET         &kp COLON  &kp EQUAL         &kp LT             &kp GT           &kp QMARK       &trans
-                                       &trans           &trans         &trans    &kp ESCAPE        &kp ENTER  &kp RS(ENTER)     &trans             &trans
+        &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp LG(GRAVE)  &kp F5    &kp F6            &kp F7     &kp F8         &kp RG(BACKSLASH)  &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK
+&trans  &kp ESCAPE  &kp F1             &kp F2           &kp F3         &kp F4    &kp DQT           &kp AMPS   &kp F9         &kp F10            &kp F11          &kp F12         &kp BSLH         &trans
+        &kp TILDE   &kp EXCL           &kp AT           &kp HASH       &kp DLLR  &kp UNDERSCORE    &kp MINUS  &kp LBKT       &kp PIPE           &kp RBKT         &kp RSHIFT      &kp RIGHT_ALT
+        &trans      &kp PERCENT        &kp ASTERISK     &kp LPAR       &kp RPAR  &kp CARET         &kp COLON  &kp EQUAL      &kp LT             &kp GT           &kp QMARK       &trans
+                                       &trans           &trans         &trans    &kp ESCAPE        &kp ENTER  &kp RS(ENTER)  &trans             &trans
             >;
         };
 
